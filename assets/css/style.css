@@ -1,0 +1,109 @@
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+header  {
+    background-image: url("../imgs/HERO.png");
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    padding-top: 38rem;
+    padding-left: 26rem;
+    
+}
+
+
+
+
+h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #FFF;
+    font-family: 'Poppins';
+}
+
+p{
+    font-size: 4rem;
+    color: #FFF;
+    font-family: 'Acme';
+}
+
+.apresentacao{
+    background-image: url("../imgs/jett.png");
+    height: 100vh;
+    background-size: cover;
+    padding-top: 38rem;
+    padding-left: 26rem;
+
+}
+
+h2 {
+    position: absolute;
+    width: 97.1rem;
+    height: 9rem;
+    left: 70rem;
+    top: 110rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 9rem;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.apresentacao p{
+    position: absolute;
+    width: 84.6rem;
+    height: 35.4rem;
+    left: 70rem;
+    top: 140rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.avatar-zenitsu{
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    left: 25rem;
+    top: 110rem;
+    border-radius: 50%;
+}
+
+.avatar-killua{
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    left: 25rem;
+    top: 150rem;
+    border-radius: 50%;
+}
+
+
+
