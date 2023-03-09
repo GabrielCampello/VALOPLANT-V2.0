@@ -1,6 +1,4 @@
-
-  
-  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@900&display=swap');
 
 
 *{
@@ -15,15 +13,42 @@ html {
 }
 
 header  {
+    padding-top: 38rem;
+    padding-left: 26rem;
+}
+
+.hero{
     background-image: url("../imgs/HERO.png");
     background-position: center;
     height: 100vh;
     background-size: cover;
-    padding-top: 38rem;
-    padding-left: 26rem;
-    
+    position: relative;
+    width: 100%;
 }
 
+
+
+.button{
+    background: linear-gradient(90deg, #6A3093, #A044FF);
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 3rem;
+    text-decoration: none;
+    position: relative;
+    top: 35%;
+    left: 47%;
+}
+
+.botao{
+    background: linear-gradient(90deg, #6A3093, #A044FF);
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 3rem;
+    text-decoration: none;
+    position: relative;
+    top: 70%;
+    left: 38%;
+}
 
 
 
@@ -104,6 +129,3 @@ h2 {
     top: 150rem;
     border-radius: 50%;
 }
-
-
-
