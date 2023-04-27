@@ -23,6 +23,90 @@ body{
     font-size: 1.6rem;
 }
 
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.spin{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 16px solid #999;
+    border-top: 16px solid #6A3093;
+    animation: spin 2s linear infinite;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes spin {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#hamburguer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 11;
+}
+
+#hamburguer .linha{
+    width: 100%;
+    height: .5rem;
+    background-color: #FFF;
+    box-shadow: 0 .2rem .2rem #000;
+} 
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: fixed;
+    right: -20rem;
+    background-color: #dc0e0e;
+    height: 100vh;
+    width: 20rem;
+    z-index: 10;
+    transition: right 1s;
+}
+
+
+#menu li {
+    list-style: none;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+#menu a:hover{
+    color: #6A3093;
+}
+
+.menu-show{
+    right: 0;
+}
+
+
 header {
     display: flex;
     flex-direction: column;
@@ -35,11 +119,15 @@ header {
     
 }
 
+header h1{
+    font-size: clamp(2rem, 5vw, 5rem);
+}
+
 header::before{
     content: '';
     width: 100%;
     height: 100%;
-    background-image: url("../images/HERO.png");
+    background-image: url("../imgs/HERO.png");
     background-size: cover;
     position: absolute;
     top: 0;
@@ -162,7 +250,7 @@ img.avatar_Uiu{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image:url(../images/jett.png);
+    background-image:url(../imgs/jett.png);
     background-size: cover;
 }
 
@@ -189,4 +277,13 @@ img.avatar_Uiu{
 
 #section-budged form output{
     grid-column: 2;
+}
+
+@media (max-width: 980px) {
+    #section-projects ul{
+        flex-direction: column;
+    }
+    .large-only{
+        display: none
+    }
 }
