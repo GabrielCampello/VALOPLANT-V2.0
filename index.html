@@ -5,12 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href=".//assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/imgs/favicon.ico" type="image/x-icon">
     <title>Portifólio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="                 crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <script src="./assets/js/loader.js"></script>
 </head>
 
 <body>
+
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
+
+    <main class="hide">
+        <nav>
+            <div id="hamburguer">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            </div>
+
+        <ul id="menu">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    Apresentação
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-code"></i>
+                    Projetos
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-money-bill"></i>
+                    Orçamento
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <header>
         <h1>Valorant Coaching</h1>
@@ -34,7 +77,7 @@
         <ul>
             <li>
                 <div class="card-image">
-                    <img src="./assets/images/haven.png" alt="">
+                    <img src="./assets/imgs/haven.png" alt="">
                 </div>
                 <div class="card-info">
                     <h3>Haven</h3>
@@ -44,7 +87,7 @@
             </li>
             <li>
                 <div class="card-image">
-                    <img src="./assets/images/ascent.png" alt="">
+                    <img src="./assets/imgs/ascent.png" alt="">
                 </div>
                 <div class="card-info">
                     <h3>Ascent</h3>
@@ -54,7 +97,7 @@
             </li>
             <li>
                 <div class="card-image">
-                    <img src="./assets/images/fracture.png" alt="">
+                    <img src="./assets/imgs/fracture.png" alt="">
                 </div>
                 <div class="card-info">
                     <h3>Fracture</h3>
@@ -85,8 +128,10 @@
 
         </form>
     </section>
+</main>
 
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/menu.js"></script>
 </body>
 
 </html>
